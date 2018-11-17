@@ -1,0 +1,225 @@
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Base CSS - contains HTML reset and core styles
+Author: www.bigbcreations.com
+***************************************************************************/
+/*
+File Name: palette.css
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* page structure / browser styles
+---------------------------------------------------------- */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #676B6E;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+}
+body {
+  /* headings
+	---------------------------------------------------------- */
+  /* table formatting
+	---------------------------------------------------------- */
+  /* end table formatting */
+  /* form formatting
+	---------------------------------------------------------- */
+  /* focus formatting */
+  /* end form formatting */
+}
+body p {
+  margin: 0 1rem 1rem;
+}
+body #banner img {
+  max-width: 100%;
+}
+body nav #home,
+body nav #subnav {
+  display: flex;
+  flex-direction: column;
+}
+body a,
+body a:link,
+body a:visited,
+body a:active,
+body a:hover {
+  color: #8e2836;
+  /* dark red */
+}
+body a:active,
+body a:hover {
+  color: #91585f;
+  /* pale red */
+}
+body ul {
+  margin: .5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+body ul li {
+  line-height: 1.5;
+}
+body ul li a {
+  color: #8E2836;
+}
+body ul li a:hover {
+  color: #CC6600;
+}
+body ul li {
+  margin: 3px 0;
+}
+body ul li ul {
+  margin-left: 0;
+  font-size: 0.95em;
+}
+body ul li ul li {
+  margin-left: -20px;
+}
+body .clear {
+  clear: both;
+}
+body .floatLeft {
+  float: left;
+  margin-right: 10px;
+}
+body .floatRight {
+  float: right;
+  margin: 0 10px;
+}
+body .kids img {
+  max-width: 100%;
+}
+body h3,
+body h4 {
+  color: #8e2836;
+  /* dark red */
+}
+body h1 {
+  color: #CC6600;
+}
+body h2 {
+  color: #CC9900;
+  font-size: 1.0em;
+  font-weight: bold;
+  margin: 20px 0 10px 15px;
+}
+body h3 {
+  font-size: 0.80em;
+  font-weight: bold;
+  color: #8e2836;
+  /* dark red */
+  margin: 0 0 0 15px;
+}
+body h3 span {
+  font-size: 0.80em;
+  font-weight: normal;
+  color: #000;
+}
+body h4 {
+  font-size: 0.80em;
+  font-weight: bold;
+  margin: 0 15px;
+  text-align: center;
+}
+body h5 {
+  font-size: 0.80em;
+  font-weight: bold;
+  margin: 0 15px;
+}
+body h6 {
+  font-size: 0.80em;
+  font-weight: normal;
+  margin: 0 15px;
+  text-align: center;
+}
+body table {
+  width: 570px;
+  margin: 0 15px;
+  border-spacing: 1px;
+  font-size: 0.75em;
+  color: #000;
+}
+body td,
+body th {
+  padding: 1px;
+}
+body th {
+  font-weight: bold;
+  /*font-size: 0.85em;*/
+  text-align: left;
+}
+body thead th {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+body tbody tr {
+  text-align: center;
+}
+body tbody tr td {
+  height: 20px;
+  padding: 5px 20px;
+}
+body form {
+  margin-left: 15px;
+}
+body form label {
+  font-size: 0.75em;
+}
+body fieldset {
+  border: none;
+  margin: 10px;
+}
+body legend {
+  font-weight: bolder;
+}
+body form .size,
+body form input .size,
+body form select .size,
+body form textarea .size {
+  width: 275px;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #8e2836;
+  /* dark red */
+  padding: 3px 0;
+}
+body form input,
+body form select,
+body form textarea {
+  font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+  background: #e3e3e3;
+  /* pale gray */
+  color: #8e2836;
+  /* dark red */
+  border: solid 1px #8e2836;
+  /* dark red */
+}
+body form input.button {
+  background: #8e2836;
+  /* dark red */
+  border: solid 1px #da8496;
+  /* more pale red */
+  font-size: 0.90em;
+  color: #FFF;
+  padding: 2px;
+  text-align: center;
+}
+body form span {
+  font-size: 0.85em;
+}
+body form .button input:focus,
+body form .search input:focus {
+  background: #da8496;
+  /* more pale red */
+  color: #fff;
+}
+body form input:focus,
+body form textarea:focus {
+  background: #fff;
+  color: #8e2836;
+  /* dark red */
+}

@@ -1,0 +1,209 @@
+/***************************************************************************
+	Theme Name: Portland Iron Horse
+	Theme URI: http://www.portlandironhorse.com
+	Description: Site CSS - main styles for site
+	Author: www.bigbcreations.com
+***************************************************************************/
+
+/* main navigation
+---------------------------------------------------------- */
+#navigation ul, #subnav ul, #cater_nav ul {
+	list-style:none;
+	margin: 0;	padding:0;
+}
+	#navigation ul li {
+		float:left;
+		margin: 0;	padding:0;
+		font-size: 0.80em; font-weight:bold;
+		letter-spacing: 1px;
+		text-transform:uppercase;
+	}
+		#navigation ul li a {
+			float:left;
+			padding:6px 10px;
+			text-decoration:none;
+			color:#fff; /* white */
+			border: none;
+		}
+		#Home .Home, #Gift_Certificates .Gift_Certificates, #Banquets .Banquets, #Catering .Catering, #Contact_Us .Contact_Us, #Hours .Hours, #MailList .MailList {color:#dbaa01; /* yellow */}
+		
+		#navigation ul li a:hover {	color:#d83c52; /* red */}
+		#Home a:hover .Home, #Gift_Certificates a:hover .Gift_Certificates, #Banquets a:hover .Banquets, #Catering a:hover .Catering, #Contact_Us a:hover .Contact_Us, #Hours a:hover .Hours, #MailList a:hover .MailList {color:#d83c52; /* red */}
+
+/* main subnavigation
+---------------------------------------------------------- */
+#subnav ul li {
+	float:left;
+	margin: 0;	padding:0;
+	font-size: 0.80em;
+}
+	#subnav ul li a {
+		float:left;
+		padding: 5px 14px;
+		color:#fff; /* yellow */
+		border-right: dashed 1px #ad6976; /* more pale red */
+		text-decoration:none;
+	}
+	#subnav ul li a:hover {color: #dab9c0; /* more pale red */}	
+	
+		#Lunch_Menu .Lunch_Menu, #Dinner_Menu .Dinner_Menu, #Happy_Hour_Menu .Happy_Hour_Menu, #Vegetarian_Menu .Vegetarian_Menu, #Vegan_Menu .Vegan_Menu, #Gluten_Free_Menu .Gluten_Free_Menu, #Kids_Menu .Kids_Menu, #MailList .MailList {color:#dab9c0; /* more pale red */ text-decoration:none;}
+		#Lunch_Menu a:hover .Lunch_Menu, #Dinner_Menu a:hover .Dinner_Menu, #Happy_Hour_Menu a:hover, .Happy_Hour_Menu, #Vegetarian_Menu a:hover .Vegetarian_Menu, #Vegan_Menu a:hover .Vegan_Menu, #Gluten_Free_Menu a:hover .Gluten_Free_Menu, #Kids_Menu a:hover .Kids_Menu, #MailList a:hover .MailList {color:#dbaa01; /* yellow */ text-decoration:none;}
+
+/* catering navigation
+---------------------------------------------------------- */
+#cater_nav {
+display:block;}
+
+#cater_nav a .info{
+width:166; 
+height:122;
+background-image:url(../Images/buttons/catering_info_btn.jpg) no-repeat;}
+#cater_nav a:hover .info{background-image:url(../Images/buttons/catering_info_btn_hvr.jpg) no-repeat;}
+
+
+/* content
+---------------------------------------------------------- */
+#content h1 {
+	font-size:1.3em;
+	margin-left:15px;
+	font-weight:bolder;	
+	text-align: center;
+	z-index: 20;
+}
+
+#content h3 span img {
+	padding:0; 
+	border:none;
+	margin-left: 5px; margin-bottom:0;
+}
+
+	#content h3 span.special a {
+		clear:both;
+		text-indent:-3000px;
+		display:block;
+		overflow:hidden;
+		width:562px; height:58px;
+		background:url(../Images/monthlySpecial.jpg) no-repeat;
+		margin-left: 5px;
+	}
+		#content h3 span.special a {border:none;}
+		#content h3 span.special a:hover { background-position:0 -58px;}
+
+p span {font-weight:bold; color:#990000;}
+
+img.floatRight {
+	padding:5px; margin:0 15px;
+	background: #e0e1e6;
+	border: solid 2px #c8c9cd;
+}
+	span img.floatRight {	padding:5px; margin:0 15px; border:none; background:#fff;	}	
+
+#left h3, #left p {margin-left:0;}
+#right h3, #right p {margin-left:0;}
+
+p a, p a:link, p a:visited, p a:active {color:#8e2836; /* dark red */ font-weight:bold;}
+   p a:active, p a:hover {color:#91585f; /* pale red */	font-weight:bold;}
+   
+#menuDL { float: right; font-size: 9px; margin-right: 10px;}
+
+/* Aniversary Styles
+---------------------------------------------------------- */   
+.AnivWrapper { 
+        position: relative;
+        width: 585px;
+        z-index: 10;
+}
+#AnivItems {  
+        font-size: 12px;
+}
+#AnivItems dt, #AnivItems dd{ 
+        font-weight: bold;
+        padding:3px;
+        margin-left: 0;
+}
+#AnivItems dd { 
+        margin-left: 10px;
+        font-weight: normal;
+}
+#leftColumn {
+	float: left;
+	text-align: center;
+}
+.AnivWrapper #leftColumn a img {
+        border: none; 
+}
+#rightColumn {
+	margin: 0 10px 0 220px;
+	position: relative;
+	text-align: left;
+ }
+ #rightColumn h2 {
+         text-align: left;
+         margin: 0;
+ }
+ #photocredit {display:block;
+         margin: 0 0 0 3px;
+         text-transform:uppercase;
+         font: bold 9px Arial, Helvetica, sans-serif;
+         color: #000000;
+}
+#flags {
+        position: absolute;
+        top: 40px;
+        left: 100px;
+        z-index: 15;
+ }
+
+ /* footer
+ ---------------------------------------------------------- */
+#footer p {
+        text-align:center;
+        color:#fff;
+        font-size: 0.70em;
+        margin-bottom:5px;
+}
+
+/* copyright
+---------------------------------------------------------- */
+#copyright p {
+        text-align:center;
+        font-size:0.70em;
+        color:#7d8585;
+}
+#copyright p a {color:#7d8585; font-weight:bold; text-decoration:none;}
+#copyright p a:hover {color:#9ba0a5; font-weight:bold;}
+
+.noborder { border: none; }
+.center { text-align: center; }
+.lightthickborder { border: #c8c9cd 4px solid; }
+.margin10 { margin: 10px; }
+#content .textleft { text-align: left; }
+h1.nobottommargin { margin-bottom: 0px; }
+
+/* slider
+---------------------------------------------------------- */
+
+.slider {
+	height: 175px;
+	width: 258px;
+	overflow: hidden;
+}
+
+.slider ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.slider ul > li {
+	float: left;
+	margin: 0;
+}
+
+.slider ul > li img {
+	width: 250px;
+	height: 167px;
+	border: 4px solid #C8C9CD;
+	display: block;
+	margin: 0;
+}

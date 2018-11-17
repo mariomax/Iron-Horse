@@ -1,0 +1,13 @@
+/***************************************************************************
+	Theme Name: Portland Iron Horse
+	Theme URI: http://www.portlandironhorse.com
+	Description: Global CSS - imports the external css
+		Stylesheets: base.css -- contains HTML reset and core styles
+	               : layout.css -- contains main layout directives 
+				   : site.css -- main styles for site
+	               : IE6.css -- hacks for IE 6 and earlier 
+	Author: www.bigbcreations.com
+***************************************************************************/
+@import url(base.css);
+@import url(layout.css);
+@import url(site.css);

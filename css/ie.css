@@ -1,0 +1,25 @@
+/***************************************************************************
+	Theme Name: Portland Iron Horse
+	Theme URI: http://www.portlandironhorse.com
+	Description: hacks for IE 6 and earlier
+	Author: www.bigbcreations.com
+***************************************************************************/
+* {
+	padding:0;
+	margin:0;
+}
+
+* html body {height:100%;}
+
+* html #map {margin-left:7px; padding:0; clear:both;}
+* html #content {margin:0;}
+	* html #content h3 span.special a, * html #content h3 span img {margin:0 0 0 5px;}
+
+/* IE7 Only 
+---------------------------------------------*/
+
+/* add layout for enclosing floats 
+   IE 7 doesn't support generated content */ 
+.clearThis {
+	min-height: 1px;
+}

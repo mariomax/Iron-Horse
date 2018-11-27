@@ -1,49 +1,17 @@
-/* CSS Document */
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Navigation CSS from https://www.jqueryscript.net/
+Author: www.bigbcreations.com
+***************************************************************************/
+@import 'palette.less';
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-#page {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
 /* Text */
-
-h1 {
-  margin: 0 0 1em 0;
-  font-size: 2.8em;
-  font-weight: 700;
-}
-
-h2 {
-  margin: 0 0 .5em 0;
-  font-size: 1.6em;
-  font-weight: 700;
-  line-height: 1.1em;
-}
-
-h3 {
-  margin: 0 0 .5em 0;
-  font-size: 1.3em;
-  font-weight: 700;
-  color: #000;
-}
-
-h4 {
-  margin: 0 0 1.5em 0;
-  font-weight: 700;
-}
-
-p { margin: 0 0 1em 0; }
 
 a { color: #007eff; }
 
@@ -64,7 +32,7 @@ a.btn:hover { background-color: rgba(0, 0, 0, .3); }
 
 header {
   height: 430px;
-  background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
+  /* background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom; */
   position: relative;
 }
 
@@ -73,7 +41,7 @@ header a.logo {
   display: block;
   width: 160px;
   height: 66px;
-  background: url(../images/logo.svg) no-repeat 0 0;
+  background: url(../images/logo.jpg) no-repeat 0 0;
   background-size: contain;
   z-index: 1;
   top: 15px;
@@ -221,11 +189,7 @@ header div.hero {
 }
 @media screen and (max-width:760px) {
 
-h1 { font-size: 1.8em; }
 
-h2 { font-size: 1.4em; }
-
-h3 { font-size: 1.1em; }
 
 a.btn { font-size: 1em; }
 
@@ -249,9 +213,7 @@ nav > ul { padding-left: 10px; }
 }
 @media screen and (max-width:625px) {
 
-h1 { font-size: 1em; }
 
-h3 { margin-bottom: 0; }
 
 a.btn { font-size: .9em; }
 

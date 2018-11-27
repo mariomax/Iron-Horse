@@ -17,11 +17,20 @@ body {
 	color: @gray;
 	margin: 0;
 	padding: 0;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 body {
 	p {
 		margin: 0 1rem 1rem;
+	}
+	a,
+	a:link,
+	a:visited {
+		color: @red;
+	}
+	a:active,
+	a:hover {
+		color: @gold; 
 	}
 	#banner {
 		img {
@@ -34,9 +43,17 @@ body {
 			display: flex;
 			flex-direction: column;
 		}
+		a,
+		a:link,
+		a:visited {
+			color: @white;
+		}
+		a:active,
+		a:hover {
+			color:@light; 
+		}
 	}
-	a, a:link, a:visited, a:active, a:hover {color:#8e2836; /* dark red */}
-		a:active, a:hover {color:#91585f; /* pale red */	}
+
 		
 
 	ul {

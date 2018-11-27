@@ -17,7 +17,7 @@ body {
   color: #676B6E;
   margin: 0;
   padding: 0;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 body {
   /* headings
@@ -33,6 +33,15 @@ body {
 body p {
   margin: 0 1rem 1rem;
 }
+body a,
+body a:link,
+body a:visited {
+  color: #8E2836;
+}
+body a:active,
+body a:hover {
+  color: #CC6600;
+}
 body #banner img {
   max-width: 100%;
 }
@@ -41,18 +50,14 @@ body nav #subnav {
   display: flex;
   flex-direction: column;
 }
-body a,
-body a:link,
-body a:visited,
-body a:active,
-body a:hover {
-  color: #8e2836;
-  /* dark red */
+body nav a,
+body nav a:link,
+body nav a:visited {
+  color: #FFFFFF;
 }
-body a:active,
-body a:hover {
-  color: #91585f;
-  /* pale red */
+body nav a:active,
+body nav a:hover {
+  color: #7D8585;
 }
 body ul {
   margin: .5rem;

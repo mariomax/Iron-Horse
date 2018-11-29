@@ -1,0 +1,79 @@
+/***************************************************************************
+	Theme Name: Portland Iron Horse
+	Theme URI: http://www.portlandironhorse.com
+	Description: Layout CSS - contains main layout directives
+	Author: www.bigbcreations.com
+***************************************************************************/
+
+#wrapper {
+	width:600px;
+	margin:0 auto; padding:0;
+	background: #8e2836; color:#000;
+	border: 5px solid #8e2836; /* dark red */
+	border-top:none;
+}
+#banner, #navigation, #content {margin:0; padding:0;}
+
+#banner {	width:600px; height:200px;}
+
+/* main navigation
+---------------------------------------------------------- */
+#navigation {
+	width:600px; height:25px; 
+	background: #676b6e; /* light gray */
+}
+
+	#subnav {
+			clear:both; width:600px; height: 23px;
+			background:#91585f; /* pale red */	
+			color:#fff;
+		}
+		
+/* content
+---------------------------------------------------------- */		
+#content {
+	clear:both;
+	width:600px;
+	background:#fff; color:#000; 
+	padding:15px 0;
+	position:relative;
+}
+
+#left {
+	display: inline;
+	width:220px; 
+	float:left;
+	margin-left:15px;
+}
+#right {
+	width:325px; 
+	float:left;
+	margin-right:5px;
+}
+
+#map {
+	float:left; 
+	width: 560px; height: 400px; 
+	margin-left: 15px;
+	border: 5px solid #91585f; /* pale red */
+}
+
+/* fees
+---------------------------------------------------------- */
+#fees {
+	width:600px;
+}
+
+/* footer
+---------------------------------------------------------- */
+#footer {
+	width:600px;
+	padding-top:5px;
+}
+
+/* copyright
+---------------------------------------------------------- */
+#copyright {
+	width:600px;
+	margin:10px auto 20px auto; padding:0;
+}

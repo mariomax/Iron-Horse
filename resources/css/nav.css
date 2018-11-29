@@ -1,0 +1,161 @@
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Navigation CSS from https://www.jqueryscript.net/
+Author: www.bigbcreations.com
+***************************************************************************/
+/*
+File Name: palette.css
+*/
+/* Navigation */
+body {
+  /* Hamburger button */
+  /* top level */
+}
+body nav {
+  background-color: #4B0A0C;
+  height: 0px;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem .5rem .5rem 1rem;
+  /* Link styles */
+}
+body nav a.sub-nav-logo {
+  display: none;
+}
+body nav ul.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body nav ul.main-nav li a {
+  display: block;
+  padding: 1.5rem 0 0 1rem;
+  width: auto;
+  text-decoration: none;
+}
+body nav ul.main-nav ul.mobile-sub-nav li a {
+  display: block;
+  padding: 1.5rem 0 0 2rem;
+}
+body nav .sub-nav-title {
+  display: none;
+}
+body nav .sub-nav {
+  display: none;
+}
+body nav a,
+body nav a:link {
+  color: #FFFFFF;
+}
+body nav a:visited {
+  color: #CC6600;
+}
+body nav a:active,
+body nav a:hover {
+  color: #DBAA01;
+}
+body nav a.mobile_menu {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  position: absolute;
+  background: url(../images/icon_menu.svg) no-repeat 0 0;
+  top: 10px;
+  left: auto;
+  right: 40px;
+  margin-left: 0px;
+}
+body nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body nav a[aria-haspopup="true"]::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #FFFFFF;
+  right: 9px;
+  top: 16px;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  body nav {
+    position: relative;
+    height: auto;
+    padding: 1.5rem;
+  }
+  body nav a.mobile_menu {
+    display: none;
+  }
+  body nav ul.main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body nav ul.main-nav li {
+    margin: 0 auto;
+  }
+  body nav ul.main-nav li a {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  body nav ul.main-nav li.menus {
+    display: none;
+    width: 0px;
+  }
+  body nav ul.main-nav ul.mobile-sub-nav {
+    display: none;
+  }
+  body nav ul.sub-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  body nav ul.sub-nav li {
+    margin: 0 auto;
+  }
+  body nav ul.sub-nav li a {
+    font-size: .9rem;
+    padding: 0;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1024px) {
+  body nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo main" "logo sub";
+  }
+  body nav ul.main-nav {
+    grid-area: main;
+    justify-content: flex-end;
+  }
+  body nav ul.main-nav li {
+    margin: 0 0 0 2.5rem;
+  }
+  body nav a.sub-nav-logo {
+    grid-area: logo;
+    display: block;
+    padding-left: 1.5rem;
+    align-self: center;
+    height: 45px;
+    width: auto;
+  }
+  body nav ul.sub-nav {
+    grid-area: sub;
+    justify-content: flex-end;
+  }
+  body nav ul.sub-nav li {
+    margin: 0 0 0 2rem;
+  }
+  body nav ul.sub-nav li a {
+    font-size: 1.1rem;
+  }
+}

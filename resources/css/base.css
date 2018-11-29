@@ -9,7 +9,7 @@
 html, body {
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:1em;
-	background: #676b6e url(../Images/bkg/mainBkg.gif) bottom left fixed repeat-x; /* gray */
+	background: #676b6e url(../../Images/bkg/mainBkg.gif) bottom left fixed repeat-x; /* gray */
 	color:#676b6e; /* light gray */
 	margin:0;
 	padding:0;

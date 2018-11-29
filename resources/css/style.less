@@ -1,0 +1,412 @@
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Base CSS - contains HTML reset and core styles
+Author: www.bigbcreations.com
+***************************************************************************/
+@import 'palette.less';
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:400,700,700i');
+
+
+/* page structure / browser styles
+---------------------------------------------------------- */
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: @gray;
+	margin: 0;
+	padding: 0;
+	max-width: 1400px;
+}
+body {
+	width: 100%;
+	p {
+		margin: 1rem;
+	}
+	a,
+	a:link,
+	a:visited {
+		color: @red;
+	}
+	a:active,
+	a:hover {
+		color: @gold; 
+	}
+	#banner {
+		img {
+		max-width: 100%;
+		}
+	}
+	.wrapper {
+		padding: .5rem;
+		.top-content {
+			.slider {
+				ul {
+					text-align: center;
+					li {
+						img {
+							width: 75%;
+							height: auto;
+						}
+					}
+				}
+			}
+			.intro {
+				p {
+					margin: 1rem 1rem 2rem; 
+				}
+				.items {
+					display: flex;
+					flex-direction: column;
+					.intro-item {
+						display: block;
+						margin: 0 auto;
+						justify-self: center;
+						a {
+							margin: .2rem auto .5rem;
+							text-align: center;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.middle-content {
+		ul {
+			margin: 0 0 1rem 1.5rem;
+			list-style-type: none;
+			li {
+				font-size: 1.2rem;
+				line-height: 1.5;
+				span {
+					font-size: .9rem;
+					padding-left: 1rem;
+				}
+			}
+		}
+		.general {
+			p {
+				margin: .2rem 1rem 1.5rem;
+			}
+		}
+		.kids {
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 95%;
+			}
+		}
+		p {
+			margin: 1rem 1rem 2rem;
+			line-height: 1.3;
+			text-align: center;
+		}
+		h3 {
+			margin: 1rem auto .5rem;
+			line-height: 1.2;
+		}
+		h4 {
+			color: @gray;
+			margin: 1rem 1rem 2rem;
+		}
+	}
+	.info-content {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		h2 {
+			text-align: center;
+		}
+		.hours {
+			margin: 1rem auto 1rem;
+		}
+	}
+
+	/* headings
+	---------------------------------------------------------- */
+	h3,
+	h4 {
+		color: @red;
+	}
+
+	h1 {
+		color:@gold;
+		font-family: 'Noto Serif', serif;
+		font-size: 2rem;
+		padding: 1rem 0;
+		text-align: center;
+	}
+	h2 {
+		color: @gold;
+		font-family: 'Noto Serif', serif; 
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin:20px 0 10px 15px;
+	}
+	h3 {
+		color: @gold;
+		font-family: 'Noto Serif', serif; 
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin: 1rem auto;
+		text-align: center;
+	}
+	h3.special {
+		font-size: 1.1rem;
+		color: @black;
+	}
+	h4 {
+		font-weight: 700;
+		text-align:center;
+	}
+	h5 {
+		font-size: .8rem;
+		font-weight: 700;
+	}
+	h6 {
+		font-size: .7rem; 
+		text-align:center;
+	}
+	#footer {
+		p {
+			color: @black;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+	#copyright {
+		background-color: @nav;
+		padding: 1rem 0;
+		text-align: center;
+		p {
+			color: @white;
+			padding-bottom: .5rem;
+		}
+		a {
+			color: @yellow;
+			font-size: .9rem;
+		}
+	}
+// End of new stylesheet....................................
+
+	/* table formatting
+	---------------------------------------------------------- */
+	table {
+		// width: 570px;
+		margin: 0 15px;
+		border-spacing:1px;
+		font-size:0.75em;
+		color: #000;
+	}
+					
+	td, th {padding: 1px;}
+	th {
+		font-weight: bold; /*font-size: 0.85em;*/
+		text-align: left;		
+	}
+
+	thead th {
+		text-align: center; font-weight:bold;
+		padding: 5px 20px;
+	}
+
+	tbody tr {text-align:center;}
+
+	tbody tr td { 
+		height:20px;
+		padding: 5px 20px;
+		}
+	/* end table formatting */
+
+	/* form formatting
+	---------------------------------------------------------- */
+	form {margin-left:15px;}
+	form label {font-size:0.75em;}
+	fieldset { border: none; margin: 10px; }
+	legend { font-weight: bolder; }
+	form .size, form input .size, form select .size, form textarea .size {
+		// width: 275px;
+		font-size: 0.85em;
+		font-weight:bold;
+		color: #8e2836; /* dark red */ 
+		padding: 3px 0; 
+	}
+	form input, form select, form textarea  {
+		font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+		background: #e3e3e3; /* pale gray */ color:#8e2836; /* dark red */
+		border: solid 1px #8e2836; /* dark red */
+		}
+
+	form input.button {
+		background: #8e2836; /* dark red */
+		border: solid 1px #da8496; /* more pale red */
+		font-size: 0.90em;
+		color:#FFF; 
+		padding: 2px;
+		text-align:center;
+		}
+
+	form span {font-size:0.85em;}
+
+	/* focus formatting */
+	form .button input:focus, form .search input:focus{background:#da8496; /* more pale red */ color: #fff; }
+		
+	form input:focus, form textarea:focus { 
+		background: #fff;
+		color: #8e2836; /* dark red */
+}
+/* end form formatting */
+}
+@media (min-width: 768px) {
+	body {
+		#banner {
+			img {
+				width: 100%;
+			}
+		}
+		.wrapper {
+			padding: 1rem;
+			.top-content {
+				display: grid;
+				grid-template-columns: 1fr 300px;
+				grid-template-areas:
+					"headline headline"
+					"intro slider";
+				margin-bottom: 3rem;
+				h1 {
+					grid-area: headline;
+					padding: 2rem;
+				}
+				.slider {
+					grid-area: slider;
+				}
+				.intro {
+					grid-area: intro;
+					padding-left: 1rem;
+					p {
+						line-height: 1.5;
+						margin: 0 0 2rem;
+					}
+					.items {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						.intro-item {
+							margin: 0;
+						}
+					}
+				}
+			}
+			.break {
+				margin: 2rem auto;
+				height: 3px;
+				width: 75%;
+				background-color: @gold;
+			}
+			.middle-content {
+				display: grid;
+				grid-template-columns: 300px 1fr;
+				grid-template-rows: auto 1fr auto;
+				grid-column-gap: 1rem;
+				grid-template-areas:
+					"h2 options"
+					"list options"
+					"kids kids";
+					padding: 1rem;
+				h2 {
+					grid-area: h2;
+				}
+				ul {
+					grid-area: list;
+					background-color: @gold;
+					border-radius: .5rem;
+					margin: 0 0 1rem 1rem;
+					padding-top: 1rem;
+					li {
+						color: @white;
+						font-weight: 700;
+						line-height: 2.2;
+						text-align: center;
+						span {
+							font-weight: 500;
+						}
+					}
+				}
+				.kids {
+					grid-area: kids;
+					img {
+						padding-top: .8rem;
+					}
+				}
+				.general {
+					grid-area: options;
+				}
+			}
+			.info-content {
+				display: grid;
+				grid-template-columns: 1fr 250px;
+				grid-template-rows: auto 1fr auto;
+				grid-template-areas:
+					"h2 image"
+					"hours image"
+					"para para";
+					padding: 1rem;
+				h2 {
+					grid-area: h2;
+					margin: 0 auto 1rem;
+				}
+				p {
+					grid-area: para;
+					padding: 1rem 0;
+				}
+				.family {
+					grid-area: image;
+				}
+				.hours {
+					h4 {
+						font-size: 1.3rem;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+		#copyright {
+			p {
+				margin: 0 auto;
+			}
+		}
+		#footer {
+			p {
+				font-size: 1.3rem;
+				font-weight: 700;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		.wrapper {
+			.top-content {
+				grid-template-columns: 550px 350px;
+				justify-content: center;
+				grid-column-gap: 1rem;
+				.intro {
+					padding-left: 2rem;
+				}
+			}
+			.middle-content {
+				grid-template-columns: 350px 550px;
+				justify-content: center;
+			}
+			.info-content {
+				grid-template-columns: 600px 250px;
+				justify-content: center;
+			}
+		}
+	}
+}

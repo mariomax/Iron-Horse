@@ -1,0 +1,190 @@
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Navigation CSS from https://www.jqueryscript.net/
+Author: www.bigbcreations.com
+***************************************************************************/
+@import 'palette.less';
+
+/* Navigation */
+body {
+  nav {
+    background-color: @nav;
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    padding: 3rem .5rem .5rem 1rem;
+    a.sub-nav-logo {
+      display: none;
+    }
+    ul.main-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      li {
+        a {
+          display: block;
+          padding: 1.5rem 0 0 1rem;
+          width: auto;
+          text-decoration: none;
+        }
+      }
+      ul.mobile-sub-nav {
+        li {
+          a {
+            display: block;
+            padding: 1.5rem 0 0 2rem;
+          }
+        }
+      }
+    }
+    .sub-nav-title {
+      display: none;
+    }
+    .sub-nav {
+      display: none;
+    }
+    
+    /* Link styles */
+    a,
+    a:link {
+      color: @white;
+    }
+    a:visited {
+      color: @gold;
+    }
+    a:active,
+    a:hover {
+      color: @yellow; 
+    }
+  }
+  
+  /* Hamburger button */
+  nav a.mobile_menu {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    position: absolute;
+    background: url(../images/icon_menu.svg) no-repeat 0 0;
+    top: 10px;
+    left: auto;
+    right: 40px;
+    margin-left: 0px;
+  }
+  
+  nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  /* top level */
+  
+  nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid @white;
+    right: 9px;
+    top: 16px;
+  }
+  
+  // nav a[aria-haspopup="true"]::after { display: none; }
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  body {
+    nav {
+      position: relative;
+      height: auto;
+      padding: 1.5rem;
+      a.mobile_menu {
+        display: none;
+      }
+      ul.main-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+          margin: 0 auto;
+          a {
+            font-size: 1.2rem;
+            padding: 0;
+          }
+        }
+        li.menus {
+          display: none;
+          width: 0px;
+        }
+        ul.mobile-sub-nav {
+          display: none;
+        }
+      }
+      ul.sub-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2rem;
+        li {
+          margin: 0 auto;
+          a {
+            font-size: .9rem;
+            padding: 0;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 1024px) {
+  body {
+    nav {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "logo main"
+        "logo sub";
+      ul.main-nav {
+        grid-area: main;
+        justify-content: flex-end;
+        li {
+          margin: 0 0 0 2.5rem;
+        }
+      }
+      // .sub-nav-title {
+      //   grid-area: title;
+      //   display: inline-block;
+      //   font-size: 1.1rem;
+      //   text-align: right;
+      //   margin: 0;
+      //   padding: 2rem 0 0 0;
+      // }
+      a.sub-nav-logo {
+        grid-area: logo;
+        display: block;
+        padding-left: 1.5rem;
+        align-self: center;
+        height: 45px;
+        width: auto;
+      }
+      ul.sub-nav {
+        grid-area: sub;
+        justify-content: flex-end;
+        li {
+          margin: 0 0 0 2rem;
+          a {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}

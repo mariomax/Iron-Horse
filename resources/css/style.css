@@ -1,0 +1,391 @@
+/***************************************************************************
+Theme Name: Portland Iron Horse
+Theme URI: http://www.portlandironhorse.com
+Description: Base CSS - contains HTML reset and core styles
+Author: www.bigbcreations.com
+***************************************************************************/
+/*
+File Name: palette.css
+*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:400,700,700i');
+/* page structure / browser styles
+---------------------------------------------------------- */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #676B6E;
+  margin: 0;
+  padding: 0;
+  max-width: 1400px;
+}
+body {
+  width: 100%;
+  /* headings
+	---------------------------------------------------------- */
+  /* table formatting
+	---------------------------------------------------------- */
+  /* end table formatting */
+  /* form formatting
+	---------------------------------------------------------- */
+  /* focus formatting */
+  /* end form formatting */
+}
+body p {
+  margin: 1rem;
+}
+body a,
+body a:link,
+body a:visited {
+  color: #8E2836;
+}
+body a:active,
+body a:hover {
+  color: #CC6600;
+}
+body #banner img {
+  max-width: 100%;
+}
+body .wrapper {
+  padding: .5rem;
+}
+body .wrapper .top-content .slider ul {
+  text-align: center;
+}
+body .wrapper .top-content .slider ul li img {
+  width: 75%;
+  height: auto;
+}
+body .wrapper .top-content .intro p {
+  margin: 1rem 1rem 2rem;
+}
+body .wrapper .top-content .intro .items {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .top-content .intro .items .intro-item {
+  display: block;
+  margin: 0 auto;
+  justify-self: center;
+}
+body .wrapper .top-content .intro .items .intro-item a {
+  margin: .2rem auto .5rem;
+  text-align: center;
+  text-decoration: none;
+}
+body .middle-content ul {
+  margin: 0 0 1rem 1.5rem;
+  list-style-type: none;
+}
+body .middle-content ul li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+body .middle-content ul li span {
+  font-size: .9rem;
+  padding-left: 1rem;
+}
+body .middle-content .general p {
+  margin: .2rem 1rem 1.5rem;
+}
+body .middle-content .kids img {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+}
+body .middle-content p {
+  margin: 1rem 1rem 2rem;
+  line-height: 1.3;
+  text-align: center;
+}
+body .middle-content h3 {
+  margin: 1rem auto .5rem;
+  line-height: 1.2;
+}
+body .middle-content h4 {
+  color: #676B6E;
+  margin: 1rem 1rem 2rem;
+}
+body .info-content img {
+  display: block;
+  margin: 0 auto;
+}
+body .info-content h2 {
+  text-align: center;
+}
+body .info-content .hours {
+  margin: 1rem auto 1rem;
+}
+body h3,
+body h4 {
+  color: #8E2836;
+}
+body h1 {
+  color: #CC6600;
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+body h2 {
+  color: #CC6600;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 20px 0 10px 15px;
+}
+body h3 {
+  color: #CC6600;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1rem auto;
+  text-align: center;
+}
+body h3.special {
+  font-size: 1.1rem;
+  color: #000000;
+}
+body h4 {
+  font-weight: 700;
+  text-align: center;
+}
+body h5 {
+  font-size: .8rem;
+  font-weight: 700;
+}
+body h6 {
+  font-size: .7rem;
+  text-align: center;
+}
+body #footer p {
+  color: #000000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+body #copyright {
+  background-color: #4B0A0C;
+  padding: 1rem 0;
+  text-align: center;
+}
+body #copyright p {
+  color: #FFFFFF;
+  padding-bottom: .5rem;
+}
+body #copyright a {
+  color: #DBAA01;
+  font-size: .9rem;
+}
+body table {
+  margin: 0 15px;
+  border-spacing: 1px;
+  font-size: 0.75em;
+  color: #000;
+}
+body td,
+body th {
+  padding: 1px;
+}
+body th {
+  font-weight: bold;
+  /*font-size: 0.85em;*/
+  text-align: left;
+}
+body thead th {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+body tbody tr {
+  text-align: center;
+}
+body tbody tr td {
+  height: 20px;
+  padding: 5px 20px;
+}
+body form {
+  margin-left: 15px;
+}
+body form label {
+  font-size: 0.75em;
+}
+body fieldset {
+  border: none;
+  margin: 10px;
+}
+body legend {
+  font-weight: bolder;
+}
+body form .size,
+body form input .size,
+body form select .size,
+body form textarea .size {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #8e2836;
+  /* dark red */
+  padding: 3px 0;
+}
+body form input,
+body form select,
+body form textarea {
+  font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+  background: #e3e3e3;
+  /* pale gray */
+  color: #8e2836;
+  /* dark red */
+  border: solid 1px #8e2836;
+  /* dark red */
+}
+body form input.button {
+  background: #8e2836;
+  /* dark red */
+  border: solid 1px #da8496;
+  /* more pale red */
+  font-size: 0.90em;
+  color: #FFF;
+  padding: 2px;
+  text-align: center;
+}
+body form span {
+  font-size: 0.85em;
+}
+body form .button input:focus,
+body form .search input:focus {
+  background: #da8496;
+  /* more pale red */
+  color: #fff;
+}
+body form input:focus,
+body form textarea:focus {
+  background: #fff;
+  color: #8e2836;
+  /* dark red */
+}
+@media (min-width: 768px) {
+  body #banner img {
+    width: 100%;
+  }
+  body .wrapper {
+    padding: 1rem;
+  }
+  body .wrapper .top-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: "headline headline" "intro slider";
+    margin-bottom: 3rem;
+  }
+  body .wrapper .top-content h1 {
+    grid-area: headline;
+    padding: 2rem;
+  }
+  body .wrapper .top-content .slider {
+    grid-area: slider;
+  }
+  body .wrapper .top-content .intro {
+    grid-area: intro;
+    padding-left: 1rem;
+  }
+  body .wrapper .top-content .intro p {
+    line-height: 1.5;
+    margin: 0 0 2rem;
+  }
+  body .wrapper .top-content .intro .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .wrapper .top-content .intro .items .intro-item {
+    margin: 0;
+  }
+  body .wrapper .break {
+    margin: 2rem auto;
+    height: 3px;
+    width: 75%;
+    background-color: #CC6600;
+  }
+  body .wrapper .middle-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-column-gap: 1rem;
+    grid-template-areas: "h2 options" "list options" "kids kids";
+    padding: 1rem;
+  }
+  body .wrapper .middle-content h2 {
+    grid-area: h2;
+  }
+  body .wrapper .middle-content ul {
+    grid-area: list;
+    background-color: #CC6600;
+    border-radius: .5rem;
+    margin: 0 0 1rem 1rem;
+    padding-top: 1rem;
+  }
+  body .wrapper .middle-content ul li {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 2.2;
+    text-align: center;
+  }
+  body .wrapper .middle-content ul li span {
+    font-weight: 500;
+  }
+  body .wrapper .middle-content .kids {
+    grid-area: kids;
+  }
+  body .wrapper .middle-content .kids img {
+    padding-top: .8rem;
+  }
+  body .wrapper .middle-content .general {
+    grid-area: options;
+  }
+  body .wrapper .info-content {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "h2 image" "hours image" "para para";
+    padding: 1rem;
+  }
+  body .wrapper .info-content h2 {
+    grid-area: h2;
+    margin: 0 auto 1rem;
+  }
+  body .wrapper .info-content p {
+    grid-area: para;
+    padding: 1rem 0;
+  }
+  body .wrapper .info-content .family {
+    grid-area: image;
+  }
+  body .wrapper .info-content .hours h4 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  body #copyright p {
+    margin: 0 auto;
+  }
+  body #footer p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  body .wrapper .top-content {
+    grid-template-columns: 550px 350px;
+    justify-content: center;
+    grid-column-gap: 1rem;
+  }
+  body .wrapper .top-content .intro {
+    padding-left: 2rem;
+  }
+  body .wrapper .middle-content {
+    grid-template-columns: 350px 550px;
+    justify-content: center;
+  }
+  body .wrapper .info-content {
+    grid-template-columns: 600px 250px;
+    justify-content: center;
+  }
+}

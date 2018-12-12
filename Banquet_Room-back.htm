@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Banquet Room Reservation ~ Iron Horse Restaurant (Portland, OR) ~ exceptional Mexican and Southwestern food</title>
+<meta name="Description" content="Reserve our Banquet Room for your holliday party - It's FREE! (With purchase of food and beverages)" />
+<!--#include file="Resources/Includes/meta.inc" -->
+<style type="text/css">
+@import url("Resources/CSS/global.css");
+</style>
+<link rel="shortcut icon" href="resources/images/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="http://portlandironhorse.com/CSS/jquery.lightbox-0.5.css" media="screen" />
+<script type="text/javascript" src="http://portlandironhorse.com/JS/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="http://portlandironhorse.com/JS/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('a.lightbox').lightBox();
+    });
+</script>
+<script src="Resources/JS/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+ <div id="banner">
+<img src="resources/images/Banner2.jpg" width="600" height="200" alt="Iron Horse" />
+ </div>
+ <!-- end BANNER div -->
+ <div id="navigation">
+   <ul id="banquets">
+     <!--#include file="Resources/Includes/navigation.inc" -->
+   </ul>
+ </div>
+ <!-- end div NAVIGATION -->
+ <div id="subnav">
+   <ul>
+     <!--#include file="Resources/Includes/subnav.inc" -->
+   </ul>
+ </div>
+ <!-- end div subnav -->
+ <div id="content">
+   <h1>IRON HORSE BANQUET ROOM</h1>
+   <p>Reserve our Banquet Room for your holiday party - It's FREE! (With purchase of food and beverages)</p>
+   <blockquote>
+     <p>&bull; Business Lunches<br />
+        &bull; Receptions<br />
+        &bull; Parties<br />
+        &bull; Graduations</p>
+   </blockquote>
+   <h3>Banquet Room Request</h3>
+   <br />
+
+   <div class="floatRight center"><a class="lightbox" href="resources/images/Banquet_Room_Large.jpg"><img class="lightthickborder" src="resources/images/Banquet_Room.jpg" alt="Reserve our Banquet Room - It's FREE! (With purchase of food and beverages)" vwidth="250" height="167" /></a><br />
+     <p>Click for larger image</p>
+   </div>
+      <form name="RequestForm" action="MailForm.asp" method="post">
+      <input type="HIDDEN" name="FROM_ADDRESS" value="webform@portlandironhorse.com" />
+      <input type="HIDDEN" name="HOST" value="mail.bigbmanagedservices.com" />
+      <input type="HIDDEN" name="REDIRECT_TO" value="Confirm.htm" />
+      <input type="HIDDEN" name="SUBJECT" value="Banquet Requests" />
+      <input type="HIDDEN" name="TO_ADDRESS" value="webform@portlandironhorse.com" />
+     <span>Name:</span><br />
+     <input name="Name" id="name" class="size" type="text"/>
+     <br />
+     <span>Address 1:</span><br />
+     <input name="Address1" id="Address1" class="size" type="text"/>
+     <br />
+     <span>Address 2:</span><br />
+     <input name="Address2" id="Address2" class="size" type="text"/>
+     <br />
+     <span>City:</span><br />
+     <input name="City" id="city" class="size" type="text"/>
+     <br />
+     <span>State:</span><br />
+     <input name="State" id="state" class="size" type="text"/>
+     <br />
+     <span>Zip:</span><br />
+     <input name="Zip" id="zip" class="size" type="text"/>
+     <br />
+     <span>Phone Number:</span><br />
+     <input name="Phone" id="phone" class="size" type="text"/>
+     <br />
+     <span>E-mail:</span><br />
+     <input name="FROM_ADDRESS" id="email" class="size" type="text"/>
+     <br />
+     <span>Event Date:</span><br />
+     <input name="Event Date" id="eventDate" class="size" type="text"/>
+     <br />
+     <span>Event Time:</span><br />
+     <input name="Event Time" id="eventTime" class="size" type="text"/>
+     <br />
+     <span>Number of People (approximately):</span><br />
+     <input name="Number of People" id="numberPeople" class="size" type="text"/>
+     <br />
+     <span>Comments:</span><br />
+     <textarea name="Comments" id="comments" class="size" rows="5" cols="30"></textarea>
+     <br />
+     <input name="submit" id="submit" class="button" value="Send" type="submit" />
+   </form>
+   <br clear="all" />
+ </div>
+ <!-- end div CONTENT -->
+ <!--#include file="Resources/Includes/footer.inc" -->
+</div>
+<!-- end WRAPPER div -->
+<!--#include file="Resources/Includes/copyright.inc" -->
+</body>
+</html>

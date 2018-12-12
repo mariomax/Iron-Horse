@@ -1,0 +1,5 @@
+# /robots.txt file for http://www.portlandironhorse.com/
+
+User-agent: * 
+
+Sitemap: http://www.portlandironhorse.com/sitemap.xml

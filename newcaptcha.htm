@@ -1,0 +1,26 @@
+  <html>
+  <body>
+
+  <% if server_response <> "" or newCaptcha then %>
+
+    <% if newCaptcha = False then %>
+
+      <!-- An error occurred -->
+      Wrong!
+
+    <% end if %>
+
+    <!-- Generating the form -->
+    <form action="recaptcha.asp" method="post">
+      <%=recaptcha_challenge_writer()%>
+    </form>
+
+  <% else %>
+
+    <!-- The solution was correct -->
+    Correct!
+
+  <%end if%>
+
+  </body>
+  </html>

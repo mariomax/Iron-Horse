@@ -15,7 +15,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: @gray;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	max-width: 1400px;
 }
@@ -72,6 +72,61 @@ body {
 				}
 			}
 		}
+		.content {
+			.return {
+				margin: 0 auto;
+				padding: .5rem;
+				p {
+					line-height: 1.5;
+				}
+				ul {
+					line-height: 2;
+					padding: 1rem 0 1rem 1rem;
+				}
+			}
+		}
+		#content {
+			p {
+				text-align: center;
+			}
+			.center {
+				text-align: center;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 95%;
+			}
+			.catering {
+				display: flex;
+				justify-content: center;
+			}
+			.map-form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				form {
+					max-width: 500px;
+					margin: 0 auto;
+					input {
+						margin: 0;
+					}
+				}
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 2rem 1rem;
+				input{
+					padding: .5rem;
+				}
+			}
+			.email-form {
+				display: flex;
+				flex-direction: row;
+			}
+		}
 	}
 	.middle-content {
 		ul {
@@ -123,6 +178,14 @@ body {
 		.hours {
 			margin: 1rem auto 1rem;
 		}
+	}
+	.break,
+	.h1-break {
+		display: block;
+		margin: 2rem auto;
+		height: 3px;
+		width: 45%;
+		background-color: @gold;
 	}
 
 	/* headings
@@ -196,7 +259,7 @@ body {
 	---------------------------------------------------------- */
 	table {
 		// width: 570px;
-		margin: 0 15px;
+		margin: 0 auto;
 		border-spacing:1px;
 		font-size:0.75em;
 		color: #000;
@@ -210,14 +273,14 @@ body {
 
 	thead th {
 		text-align: center; font-weight:bold;
-		padding: 5px 20px;
+		padding: 5px 1rem;
 	}
 
 	tbody tr {text-align:center;}
 
 	tbody tr td { 
 		height:20px;
-		padding: 5px 20px;
+		padding: 5px 1rem;
 		}
 	/* end table formatting */
 
@@ -264,6 +327,7 @@ body {
 	body {
 		#banner {
 			img {
+				height: auto;
 				width: 100%;
 			}
 		}
@@ -274,11 +338,15 @@ body {
 				grid-template-columns: 1fr 300px;
 				grid-template-areas:
 					"headline headline"
+					"h1-break h1-break"
 					"intro slider";
 				margin-bottom: 3rem;
 				h1 {
 					grid-area: headline;
 					padding: 2rem;
+				}
+				.h1-break {
+					grid-area: h1-break;
 				}
 				.slider {
 					grid-area: slider;
@@ -300,12 +368,6 @@ body {
 					}
 				}
 			}
-			.break {
-				margin: 2rem auto;
-				height: 3px;
-				width: 75%;
-				background-color: @gold;
-			}
 			.middle-content {
 				display: grid;
 				grid-template-columns: 300px 1fr;
@@ -318,6 +380,7 @@ body {
 					padding: 1rem;
 				h2 {
 					grid-area: h2;
+					text-align: center;
 				}
 				ul {
 					grid-area: list;
@@ -372,6 +435,26 @@ body {
 					}
 				}
 			}
+			.content {
+				.return {
+					ul {
+						padding-left: 3rem;
+					}
+				}
+			}
+			#content {
+				.banquet-room {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					.banquet {
+						max-width: 500px;
+					}
+					.banquet-form {
+						margin-top: 1rem;
+					}
+				}
+			}
 		}
 		#copyright {
 			p {
@@ -406,6 +489,27 @@ body {
 			.info-content {
 				grid-template-columns: 600px 250px;
 				justify-content: center;
+			}
+			#content {
+				.map-form {
+					display: flex;
+					flex-direction: row-reverse;
+					padding: 2rem;
+					form {
+						width: 400px;
+						margin: 0;
+						padding-right: 2rem;
+					}
+				}
+				.banquet-room {
+					.banquet {
+						padding: 2rem;
+					}
+					.banquet-form {
+						padding: 1rem;
+						width: 400px;
+					}
+				}
 			}
 		}
 	}

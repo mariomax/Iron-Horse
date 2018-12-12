@@ -15,7 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #676B6E;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1400px;
 }
@@ -41,7 +41,7 @@ body a:visited {
 }
 body a:active,
 body a:hover {
-  color: #CC6600;
+  color: #cc6600;
 }
 body #banner img {
   max-width: 100%;
@@ -72,6 +72,57 @@ body .wrapper .top-content .intro .items .intro-item a {
   margin: .2rem auto .5rem;
   text-align: center;
   text-decoration: none;
+}
+body .wrapper .content .return {
+  margin: 0 auto;
+  padding: .5rem;
+}
+body .wrapper .content .return p {
+  line-height: 1.5;
+}
+body .wrapper .content .return ul {
+  line-height: 2;
+  padding: 1rem 0 1rem 1rem;
+}
+body .wrapper #content p {
+  text-align: center;
+}
+body .wrapper #content .center {
+  text-align: center;
+}
+body .wrapper #content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+}
+body .wrapper #content .catering {
+  display: flex;
+  justify-content: center;
+}
+body .wrapper #content .map-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .wrapper #content .map-form form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+body .wrapper #content .map-form form input {
+  margin: 0;
+}
+body .wrapper #content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+body .wrapper #content form input {
+  padding: .5rem;
+}
+body .wrapper #content .email-form {
+  display: flex;
+  flex-direction: row;
 }
 body .middle-content ul {
   margin: 0 0 1rem 1.5rem;
@@ -116,26 +167,34 @@ body .info-content h2 {
 body .info-content .hours {
   margin: 1rem auto 1rem;
 }
+body .break,
+body .h1-break {
+  display: block;
+  margin: 2rem auto;
+  height: 3px;
+  width: 45%;
+  background-color: #cc6600;
+}
 body h3,
 body h4 {
   color: #8E2836;
 }
 body h1 {
-  color: #CC6600;
+  color: #cc6600;
   font-family: 'Noto Serif', serif;
   font-size: 2rem;
   padding: 1rem 0;
   text-align: center;
 }
 body h2 {
-  color: #CC6600;
+  color: #cc6600;
   font-family: 'Noto Serif', serif;
   font-size: 1.4rem;
   font-weight: 700;
   margin: 20px 0 10px 15px;
 }
 body h3 {
-  color: #CC6600;
+  color: #cc6600;
   font-family: 'Noto Serif', serif;
   font-size: 1.1rem;
   font-weight: 700;
@@ -177,7 +236,7 @@ body #copyright a {
   font-size: .9rem;
 }
 body table {
-  margin: 0 15px;
+  margin: 0 auto;
   border-spacing: 1px;
   font-size: 0.75em;
   color: #000;
@@ -194,14 +253,14 @@ body th {
 body thead th {
   text-align: center;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 5px 1rem;
 }
 body tbody tr {
   text-align: center;
 }
 body tbody tr td {
   height: 20px;
-  padding: 5px 20px;
+  padding: 5px 1rem;
 }
 body form {
   margin-left: 15px;
@@ -264,6 +323,7 @@ body form textarea:focus {
 }
 @media (min-width: 768px) {
   body #banner img {
+    height: auto;
     width: 100%;
   }
   body .wrapper {
@@ -272,12 +332,15 @@ body form textarea:focus {
   body .wrapper .top-content {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-template-areas: "headline headline" "intro slider";
+    grid-template-areas: "headline headline" "h1-break h1-break" "intro slider";
     margin-bottom: 3rem;
   }
   body .wrapper .top-content h1 {
     grid-area: headline;
     padding: 2rem;
+  }
+  body .wrapper .top-content .h1-break {
+    grid-area: h1-break;
   }
   body .wrapper .top-content .slider {
     grid-area: slider;
@@ -298,12 +361,6 @@ body form textarea:focus {
   body .wrapper .top-content .intro .items .intro-item {
     margin: 0;
   }
-  body .wrapper .break {
-    margin: 2rem auto;
-    height: 3px;
-    width: 75%;
-    background-color: #CC6600;
-  }
   body .wrapper .middle-content {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -314,10 +371,11 @@ body form textarea:focus {
   }
   body .wrapper .middle-content h2 {
     grid-area: h2;
+    text-align: center;
   }
   body .wrapper .middle-content ul {
     grid-area: list;
-    background-color: #CC6600;
+    background-color: #cc6600;
     border-radius: .5rem;
     margin: 0 0 1rem 1rem;
     padding-top: 1rem;
@@ -362,6 +420,20 @@ body form textarea:focus {
     font-size: 1.3rem;
     line-height: 1.5;
   }
+  body .wrapper .content .return ul {
+    padding-left: 3rem;
+  }
+  body .wrapper #content .banquet-room {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .wrapper #content .banquet-room .banquet {
+    max-width: 500px;
+  }
+  body .wrapper #content .banquet-room .banquet-form {
+    margin-top: 1rem;
+  }
   body #copyright p {
     margin: 0 auto;
   }
@@ -387,5 +459,22 @@ body form textarea:focus {
   body .wrapper .info-content {
     grid-template-columns: 600px 250px;
     justify-content: center;
+  }
+  body .wrapper #content .map-form {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+  }
+  body .wrapper #content .map-form form {
+    width: 400px;
+    margin: 0;
+    padding-right: 2rem;
+  }
+  body .wrapper #content .banquet-room .banquet {
+    padding: 2rem;
+  }
+  body .wrapper #content .banquet-room .banquet-form {
+    padding: 1rem;
+    width: 400px;
   }
 }
